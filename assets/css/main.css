@@ -2190,7 +2190,7 @@ button,
         margin: 0 0 4em 0;
         height: 25em;
         max-height: 40vh;
-        min-height: 18em;
+        min-height: 40em;
         width: 50%; } }
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
