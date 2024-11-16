@@ -2116,6 +2116,8 @@ button,
   display: flex; }
   #banner h1 {
     margin-top: -0.125em; }
+  #banner h2 {
+      margin-top: -0.125em; }
   #banner .content {
     -moz-flex-grow: 1;
     -webkit-flex-grow: 1;
@@ -2126,6 +2128,15 @@ button,
     -ms-flex-shrink: 1;
     flex-shrink: 1;
     width: 50%; }
+
+  #banner .content p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 0.9rem; /* 폰트 크기 조정 */
+      line-height: 1.5; /* 줄 간격 조정 */
+      margin: 1 auto;
+      max-width: 800px; /* 텍스트 최대 폭 설정 */
+    }
   #banner .image {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
@@ -2137,7 +2148,7 @@ button,
     flex-shrink: 0;
     display: block;
     margin: 0 0 2em 4em;
-    width: 50%; }
+    width: 40%; }
     #banner .image img {
       height: 100%;
       -moz-object-fit: cover;
@@ -2178,12 +2189,12 @@ button,
         flex-shrink: 0;
         margin: 0 0 4em 0;
         height: 25em;
-        max-height: 50vh;
+        max-height: 40vh;
         min-height: 18em;
         width: 100%; } }
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
-      max-height: 35vh; } }
+      max-height: 30vh; } }
 
 /* Footer */
 #footer .copyright {
